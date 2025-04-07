@@ -1,4 +1,17 @@
 package org.example;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "tipo"
+)
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = Notebook.class, name = "Notebook"),
+        @JsonSubTypes.Type(value = Tablet.class, name = "Tablet"),
+        @JsonSubTypes.Type(value = ComputadorEscritorio.class, name = "ComputadorEscritorio")
+})
 
 public abstract class DispositivoTecnologico {
     protected String marca;

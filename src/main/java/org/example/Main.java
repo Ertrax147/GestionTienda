@@ -51,8 +51,14 @@ public class Main {
             System.out.println("Tablets disponibles:");
             tienda.buscarPorTipo("Tablet").forEach(d -> System.out.println(d.especificaciones()));
 
+            //Cambiar direccion de tienda
+            tienda.modificarDireccion("Avenida Siempre Viva 742");
+            System.out.println("Se ha cambiado la direccion");
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+
     }
 }
