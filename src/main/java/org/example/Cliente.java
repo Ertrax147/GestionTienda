@@ -17,6 +17,11 @@ public class Cliente {
         this.ciudad = ciudad;
     }
 
+    //Constructor vacio para jakson
+    public Cliente(){
+
+    }
+
     public String getNombre() {
         return nombre;
     }
