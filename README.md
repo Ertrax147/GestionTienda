@@ -1,1 +1,1 @@
-Creacion de Gestion de tienda tecnologica
+Creacion de Gestion de tienda tecnologica.
