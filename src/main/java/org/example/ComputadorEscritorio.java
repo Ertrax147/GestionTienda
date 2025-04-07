@@ -17,6 +17,38 @@ public class ComputadorEscritorio extends DispositivoTecnologico {
         this.pantalla = pantalla;
     }
 
+    public String getTarjetaVideo() {
+        return tarjetaVideo;
+    }
+
+    public void setTarjetaVideo(String tarjetaVideo) {
+        this.tarjetaVideo = tarjetaVideo;
+    }
+
+    public String getFuentePoder() {
+        return fuentePoder;
+    }
+
+    public void setFuentePoder(String fuentePoder) {
+        this.fuentePoder = fuentePoder;
+    }
+
+    public String getChasis() {
+        return chasis;
+    }
+
+    public void setChasis(String chasis) {
+        this.chasis = chasis;
+    }
+
+    public Pantalla getPantalla() {
+        return pantalla;
+    }
+
+    public void setPantalla(Pantalla pantalla) {
+        this.pantalla = pantalla;
+    }
+
     @Override
     public String especificaciones() {
         return "Computador de escritorio: " + marca + " " + modelo + "\nRAM: " + ram + "GB, Almacenamiento: " +
