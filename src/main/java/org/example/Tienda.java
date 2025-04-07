@@ -8,6 +8,9 @@ public class Tienda {
     private String direccion;
     private List<DispositivoTecnologico> catalogo;
 
+    public Tienda(){
+    }
+
     public Tienda(String direccion) {
         this.direccion = direccion;
         this.catalogo = new ArrayList<>();
